@@ -5,11 +5,6 @@ using System.Web;
 
 namespace Black_Mesa_Website.Models
 {
-    public enum BMSecurity
-    {
-        Level1, Level2, Level3, Level4
-    }
-
     public class Employee
     {
         public int EmployeeID { get; set; }
