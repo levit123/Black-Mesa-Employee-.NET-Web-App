@@ -77,3 +77,7 @@ C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Webs
 C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\obj\Debug\Black_Mesa_Website.csproj.CopyComplete
 C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\obj\Debug\Black_Mesa_Website.dll
 C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\obj\Debug\Black_Mesa_Website.pdb
+C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\bin\EntityFramework.dll
+C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\bin\EntityFramework.SqlServer.dll
+C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\bin\EntityFramework.xml
+C:\Users\Owner\Documents\GitHub\Black-Mesa-Employee-.NET-Web-App\Black_Mesa_Website\Black_Mesa_Website\bin\EntityFramework.SqlServer.xml
