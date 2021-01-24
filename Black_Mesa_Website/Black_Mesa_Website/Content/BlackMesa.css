@@ -1,0 +1,27 @@
+﻿#bm-jumbotron {
+    background-color: darkorange;
+    border: solid black 4px;
+    border-radius: 0px;
+    text-align: center;
+    font-family: Impact;
+}
+
+#bm-home-h2 {
+    background-color: darkorange;
+    border: solid black 4px;
+    margin-top: 0;
+    margin-left: -15px;
+    margin-right: -15px;
+    margin-bottom: 10px;
+    font-size: 32px;
+    font-family: Impact;
+    text-align: center;
+}
+
+#bm-textblock {
+    display: inline-block;
+    border: solid black 2px;
+    width: 100%;
+    font-size: 20px;
+    overflow: hidden;
+}

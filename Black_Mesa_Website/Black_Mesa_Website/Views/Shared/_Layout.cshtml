@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>@ViewBag.Title - Black Mesa Research Facility</title>
     @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/BlackMesa.css")
     @Scripts.Render("~/bundles/modernizr")
 </head>
 <body>
@@ -25,6 +26,7 @@
                     <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
                     <li>@Html.ActionLink("Employees", "Index", "Employee")</li>
                     <li>@Html.ActionLink("Locations", "Index", "Location")</li>
+                    <li>@Html.ActionLink("Experiments", "Index", "Experiment")</li>
                 </ul>
             </div>
         </div>
