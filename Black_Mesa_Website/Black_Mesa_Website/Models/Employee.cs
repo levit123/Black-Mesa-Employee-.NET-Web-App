@@ -12,5 +12,7 @@ namespace Black_Mesa_Website.Models
         public string LastName { get; set; }
         public BMSecurity SecurityClearance { get; set; }
         public string Biography { get; set; }
+        public DateTime EmploymentDate { get; set; }
+        public virtual ICollection<Employment> Employments { get; set; }
     }
 }

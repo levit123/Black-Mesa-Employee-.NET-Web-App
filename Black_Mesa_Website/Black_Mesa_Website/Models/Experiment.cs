@@ -9,7 +9,6 @@ namespace Black_Mesa_Website.Models
     {
         public int ExperimentID { get; set; }
         public string ExperimentName { get; set; }
-        public BMSecurity RequiredSecurity { get; set; }
         public string ExperimentInfo { get; set; }
     }
 }
