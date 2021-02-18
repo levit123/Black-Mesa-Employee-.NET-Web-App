@@ -15,31 +15,28 @@ namespace Black_Mesa_Website.DAL
             //creates a list of Employee objects and defines their properties' values
             var employees = new List<Employee>
             {
-                new Employee{FirstName="Gordon", LastName="Freeman", SecurityClearance=BMSecurity.Level2,
+                new Employee{FirstName="Gordon", LastName="Freeman", 
                 Biography="MIT Graduate. Quantum Physicist. Trained Xen crystal tester. These are just some of the terms used to describe " +
                 "Dr. Freeman, who has quickly worked his way from college into Black Mesa's testing facility. While certainly intelligent, " +
                 "also has skills as a handyman, and is quickly able to pick up any tool and quickly learn to use it. Has a tendency to crawl " +
                 "through the vents. Sometimes shows up late.",
                 EmploymentDate = DateTime.Parse("1999-09-05")},
-                new Employee{FirstName="Isaac", LastName="Kleiner", SecurityClearance=BMSecurity.Level3,
+                new Employee{FirstName="Isaac", LastName="Kleiner",
                 Biography="Graduating top of his class at MIT, and former mentor of Gordon Freeman, Kleiner is a brilliant, albeit " +
                 "neurotic and paranoid, scientist who has excelled at a variety of research subjects at Black Mesa. From quantum physics " +
                 "to anomolous materials to astrobiology, Kleiner has proved to be a valuable asset to Black Mesa. This is why we were " +
                 "willing to accept his proposal to bring Gordon Freeman onto the team. In addition, it seems Kleiner and the team is not " +
                 "the only one interested in Dr. Freeman's skills. But that's above our pay grade, isn't it?",
                 EmploymentDate = DateTime.Parse("1998-06-10")},
-                new Employee{FirstName="Barney", LastName="Calhoun", SecurityClearance=BMSecurity.Level1,
+                new Employee{FirstName="Barney", LastName="Calhoun", 
                 Biography="Security guard trained in firearms, and a bit of a goof, to be honest. Seems to get along quite well with Gordon " +
                 "and Dr. Kleiner, although has short patience with the latter. When Dr. Kleiner locks his keys in his office - happens " +
                 "more often than you think - he and Gordon will race each other to see who can crawl through the vents the quickest to " +
                 "get into Kleiner's office.",
                 EmploymentDate=DateTime.Parse("1999-03-05")},
-                new Employee{FirstName="[REDACTED]", LastName="G-Man", SecurityClearance=BMSecurity.Level4,
-                Biography="[REDACTED]" + "\n" + "ADDENDUM: What in the absolute hell, what did I tell you when I first assigned you to this site? " +
-                "Do not, under any circumstances, include any background details about this guy. It's a huge risk even having a record for this guy " +
-                "At all. Do you have any idea who or what this guy works for? Cuz I sure don't. All we've been told is to ignore him when he's on " +
-                "the facility grounds, don't even look him in the eye, just let him go about his business. I don't want to see any more info " +
-                "about him, even hearing his weird voice gives me the creeps.",
+                new Employee{FirstName="[EXPUNGED]", LastName="G-Man",
+                Biography="[EXPUNGED]" + "\n" + "ADDENDUM: Under no circumstances is any info, conspiracies, or mentions of this employee " +
+                "to be on this site. For all intensive purposes, he doesn't exist. His work is far beyond any average folk such as us.",
                 EmploymentDate=DateTime.Parse("0000-00-00")}
             };
 
@@ -49,8 +46,34 @@ namespace Black_Mesa_Website.DAL
 
             var locations = new List<Location>
             {
-
+                new Location{LocationName="Primary Testing Facility", LocationInfo="Consists of multiple offices, break rooms, labs, and " +
+                "and test chambers for various experiments, including hazardous materials. Area is to be monitored heavily by standard security, " +
+                "and employees are expected to present employee ID's upon arriving via tram." },
+                new Location{LocationName="Rocket Site", LocationInfo="Consists of launchpad, maintenance tunnels, rocket silos, " +
+                "and observation area for launching space rockets containing satelites, planet probes, and other devices into space."},
+                new Location{LocationName="Toxic Waste Handling", LocationInfo="All toxic waste is to re-direct through here for proper handling " +
+                "and disposal. HEV suits are required for entering anywhere beyond the entrance to this area."},
+                new Location{LocationName="Hydro Generators", LocationInfo="Housing and maintenance area for large water-powered generators that " +
+                "power various parts of the overall research facility. Personal travel through underwater maintenance tunnels not recommended " +
+                "due to potential of radiation leak if the generators accrue sufficient damage."},
+                new Location{LocationName="Xen Portal Site", LocationInfo="[REDACTED]"}
             };
+
+            //iterates through the list of Locations and adds each one to the context for the database
+            locations.ForEach(s => context.Locations.Add(s));
+            context.SaveChanges();
+
+            var employments = new List<Employment>
+            {
+                new Employment{EmployeeID=1, EmploymentID=363, LocationID=1, SecurityLevel=BMSecurity.Level2},
+                new Employment{EmployeeID=2, EmploymentID=172, LocationID=3, SecurityLevel=BMSecurity.Level3},
+                new Employment{EmployeeID=3, EmploymentID=203, LocationID=2, SecurityLevel=BMSecurity.Level1},
+                new Employment{EmployeeID=4, EmploymentID=000, LocationID=4, SecurityLevel=BMSecurity.Level4}
+            };
+
+            //iterates through the list of Employments and adds each one to the context for the database
+            employments.ForEach(s => context.Employments.Add(s));
+            context.SaveChanges();
 
         }
     }

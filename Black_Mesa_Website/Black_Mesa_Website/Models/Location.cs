@@ -9,7 +9,6 @@ namespace Black_Mesa_Website.Models
     {
         public int LocationID { get; set; }
         public string LocationName { get; set; }
-        public BMSecurity RequiredSecurity { get; set; }
         public string LocationInfo { get; set; }
     }
 }
