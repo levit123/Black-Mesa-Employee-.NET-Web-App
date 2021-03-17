@@ -20,24 +20,24 @@ namespace Black_Mesa_Website.DAL
                 "Dr. Freeman, who has quickly worked his way from college into Black Mesa's testing facility. While certainly intelligent, " +
                 "also has skills as a handyman, and is quickly able to pick up any tool and quickly learn to use it. Has a tendency to crawl " +
                 "through the vents. Sometimes shows up late.",
-                EmploymentDate = DateTime.Parse("1999-09-05")},
+                EmploymentDate = DateTime.Parse("05/09/1999")},
                 new Employee{FirstName="Isaac", LastName="Kleiner",
                 Biography="Graduating top of his class at MIT, and former mentor of Gordon Freeman, Kleiner is a brilliant, albeit " +
                 "neurotic and paranoid, scientist who has excelled at a variety of research subjects at Black Mesa. From quantum physics " +
                 "to anomolous materials to astrobiology, Kleiner has proved to be a valuable asset to Black Mesa. This is why we were " +
                 "willing to accept his proposal to bring Gordon Freeman onto the team. In addition, it seems Kleiner and the team is not " +
                 "the only one interested in Dr. Freeman's skills. But that's above our pay grade, isn't it?",
-                EmploymentDate = DateTime.Parse("1998-06-10")},
+                EmploymentDate = DateTime.Parse("06/10/1998")},
                 new Employee{FirstName="Barney", LastName="Calhoun", 
                 Biography="Security guard trained in firearms, and a bit of a goof, to be honest. Seems to get along quite well with Gordon " +
                 "and Dr. Kleiner, although has short patience with the latter. When Dr. Kleiner locks his keys in his office - happens " +
                 "more often than you think - he and Gordon will race each other to see who can crawl through the vents the quickest to " +
                 "get into Kleiner's office.",
-                EmploymentDate=DateTime.Parse("1999-03-05")},
+                EmploymentDate=DateTime.Parse("03/05/1999")},
                 new Employee{FirstName="[EXPUNGED]", LastName="G-Man",
                 Biography="[EXPUNGED]" + "\n" + "ADDENDUM: Under no circumstances is any info, conspiracies, or mentions of this employee " +
                 "to be on this site. For all intensive purposes, he doesn't exist. His work is far beyond any average folk such as us.",
-                EmploymentDate=DateTime.Parse("0000-00-00")}
+                EmploymentDate=DateTime.Parse("01/01/2000")}
             };
 
             //iterates through the list of Employees and adds each one to the context for the database
